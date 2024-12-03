@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Header from "./components/Header/Header";
+import Navbar from "./components/Navbar/Navbar";
+import About from "./components/About/About";
+import Courses from "./components/Courses/Courses";
+import Admission from "./components/Admission/Admission";
+import Cutoff from "./components/Cutoff/Cutoff";
+import Placement from "./components/Placement/Placement";
+import Ranking from "./components/Ranking/Ranking";
+import Scholarship from "./components/Scholarship/Scholarship";
+import Campus from "./components/Campus/Campus";
+import AlumniNetwork from "./components/AlumniNetwork/AlumniNetwork";
+import FAQ from "./components/FAQ/FAQ";
+import Footer from "./components/Footer/Footer";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="containerr">
+      <Header />
+      <Navbar />
+      <div className="contain">
+        <About />
+        <Courses />
+        <Admission />
+        <Cutoff />
+        <Placement />
+        <Ranking />
+        <Scholarship />
+        <Campus />
+        <AlumniNetwork />
+        <FAQ />
+      </div>
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
