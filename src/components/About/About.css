@@ -18,6 +18,7 @@ section {
   padding: 20px !important;
   padding-top: calc(20px + 50px) !important;
   margin-bottom: -50px;
+  scroll-margin-top: 30px;
 }
 
 p {
